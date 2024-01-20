@@ -1,0 +1,13 @@
+<input bindinput="getName" placeholder="输入用户名"></input>
+<input bindinput="getAge" placeholder="输入年龄"></input>
+<input bindinput="getId" placeholder="输入id"></input>
+<input bindinput="getPassword" placeholder="输入密码"></input>
+
+<button bind:tap="add">增</button>
+<button bind:tap="delete">删</button>
+<button bind:tap="update">改</button>
+<button bind:tap="getAll">查</button>
+
+<block wx:for="{{datalist}}" wx:key="index">
+  <view>{{item.name}}~{{item.age}}~{{item.id}}~{{item.password}}</view>
+</block>

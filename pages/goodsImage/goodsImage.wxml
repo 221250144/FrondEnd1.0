@@ -1,0 +1,6 @@
+<!-- pages/index/index.wxml -->
+<view>
+  <button bindtap="chooseImage">选择图片</button>
+  <image src="{{imageUrl}}" mode="aspectFit"></image>
+  <button bindtap="uploadImage">上传图片</button>
+</view>
